@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using UnityEngine;
 
-public class CardScript : MonoBehaviour
+public class CardScript : MonoBehaviour //stack overflow randomizer
 {
     // Value of card, 2 of clubs = 2, etc
     public int value = 0;
@@ -13,7 +13,7 @@ public class CardScript : MonoBehaviour
         return value;
     }
 
-    public void SetValue(int newValue)
+    public void SetValue(int newValue) 
     {
         value = newValue;
     }
