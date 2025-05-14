@@ -145,7 +145,7 @@ public class GameManager : MonoBehaviour
             standBtn.gameObject.SetActive(false);
             dealBtn.gameObject.SetActive(true);
             mainText.gameObject.SetActive(true);
-            dealerScoreText.gameObject.SetActive(true);
+            dealerScoreText.gameObject.SetActive(true);        //Stack Overflow buttom verification and rendering
             hideCard.GetComponent<Renderer>().enabled = false;
             cashText.text = "$" + playerScript.GetMoney().ToString();
             standClicks = 0;
