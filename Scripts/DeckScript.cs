@@ -6,7 +6,7 @@ using UnityEngine;
 public class DeckScript : MonoBehaviour
 {
     public Sprite[] cardSprites;
-    int[] cardValues = new int[53];
+    int[] cardValues = new int[53]; //ChatGPT use of array data storing
     int currentIndex = 0;
 
     void Start()
@@ -40,7 +40,7 @@ public class DeckScript : MonoBehaviour
         {
             int j = Mathf.FloorToInt(Random.Range(0.0f, 1.0f) * cardSprites.Length - 1) + 1;
             Sprite face = cardSprites[i];
-            cardSprites[i] = cardSprites[j];
+            cardSprites[i] = cardSprites[j];  //shuffle method from ChatGPT
             cardSprites[j] = face;
 
             int value = cardValues[i];
