@@ -57,7 +57,7 @@ public class PlayerScript : MonoBehaviour
         {
             if(handValue + 10 < 22 && ace.GetValueOfCard() == 1)
             {
-                // if converting, adjust card object value and hand
+                // if converting, adjust card object value and hand        //ChatGPT ace check
                 ace.SetValue(11);
                 handValue += 10;
             } else if (handValue > 21 && ace.GetValueOfCard() == 11)
